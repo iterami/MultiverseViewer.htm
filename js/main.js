@@ -5,8 +5,12 @@ function repo_init(){
       'events': {
         'level-load-file': {
           'onclick': function(){
+              const files = document.getElementById('level-file').files;
+              if(files.length === 0){
+                  return;
+              }
               core_file({
-                'file': document.getElementById('level-file').files[0],
+                'file': files[0],
                 'todo': function(event){
                     webgl_level_load({
                       'character': -1,
@@ -22,7 +26,7 @@ function repo_init(){
           'onclick': function(){
               const level_json = JSON.parse(document.getElementById('level-textarea').value);
               webgl_level_load({
-                'character': 0,
+                'character': -1,
                 'json': level_json,
               });
               document.title = level_json['title'] || core_repo_title;
