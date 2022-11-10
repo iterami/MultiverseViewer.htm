@@ -1,2 +1,6 @@
-# MultiverseViewer.htm
-:house_with_garden: CC0 iterami JSON level format viewer web tool. https://iterami.github.io/MultiverseViewer.htm/
+iterami/MultiverseViewer.htm
+----------------------------
+
+* Contributing: https://iterami.github.io/Docs.htm/standards/contributing.htm
+* Requires:
+  * [iterami/common](https://github.com/iterami/common)
