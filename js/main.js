@@ -5,18 +5,22 @@ function repo_init(){
       'events': {
         'level-load-file': {
           'onclick': function(){
-              const files = document.getElementById('level-file').files;
-              if(files.length === 0){
+              const element = document.getElementById('level-file');
+              if(element.files.length === 0){
                   return;
               }
               core_file({
-                'file': files[0],
+                'file': element.files[0],
                 'todo': function(event){
-                    webgl_level_load({
-                      'character': -1,
-                      'json': JSON.parse(event.target.result),
-                    });
-                    document.title = webgl_properties['title'] || core_repo_title;
+                    if(webgl_level_load({
+                        'character': -1,
+                        'json': JSON.parse(event.target.result),
+                      })){
+                        document.title = webgl_properties['title'] || core_repo_title;
+
+                    }else{
+                        element.value = null;
+                    }
                 },
                 'type': 'readAsText',
               });
