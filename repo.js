@@ -42,7 +42,6 @@ function repo_init(){
         },
       },
       'keybinds': {
-        70: {},
         192: {
           'todo': function(){
               webgl_characters[webgl_character_id]['automove'] = !webgl_characters[webgl_character_id]['automove'];
