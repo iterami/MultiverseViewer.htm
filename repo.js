@@ -78,5 +78,4 @@ function repo_init(){
       },
       'title': 'MultiverseViewer.htm',
     });
-    webgl_storage_init();
 }
