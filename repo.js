@@ -40,7 +40,11 @@ function repo_init(){
                 : core_repo_title;
           },
         },
+        'screenshot': {
+          'onclick': webgl_screenshot,
+        },
       },
+      'info': '<input id=screenshot type=button value=Screenshot>',
       'keybinds': {
         192: {
           'todo': function(){
