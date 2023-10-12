@@ -9,6 +9,7 @@ function repo_init(){
               if(element.files.length === 0){
                   return;
               }
+              core_menu_lock = false;
               core_file({
                 'file': element.files[0],
                 'todo': function(event){
@@ -30,6 +31,7 @@ function repo_init(){
         },
         'level-load-textarea': {
           'onclick': function(){
+              core_menu_lock = false;
               const level_json = JSON.parse(document.getElementById('level-textarea').value);
               webgl_level_load({
                 'character': -1,
@@ -53,6 +55,7 @@ function repo_init(){
         },
       },
       'menu': true,
+      'menu-lock': true,
       'mousebinds': {
         'contextmenu': {
           'preventDefault': true,
