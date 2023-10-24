@@ -48,7 +48,7 @@ function repo_init(){
       },
       'info': '<input id=screenshot type=button value=Screenshot>',
       'keybinds': {
-        192: {
+        'Backquote': {
           'todo': function(){
               webgl_characters[webgl_character_id]['automove'] = !webgl_characters[webgl_character_id]['automove'];
           },
