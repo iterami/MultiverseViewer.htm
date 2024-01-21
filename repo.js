@@ -46,7 +46,7 @@ function repo_init(){
           'onclick': webgl_screenshot,
         },
       },
-      'info': '<input id=screenshot type=button value=Screenshot>',
+      'info': '<button id=screenshot type=button>Screenshot</button>',
       'keybinds': {
         'Backquote': {
           'todo': function(){
@@ -72,8 +72,8 @@ function repo_init(){
       },
       'tabs': {
         'load': {
-          'content': '<input id=level-file type=file><input id=level-load-file type=button value="Load Level from File"><br>'
-            + '<input id=level-load-textarea type=button value="Load Level from Textarea"><br><textarea id=level-textarea>{}</textarea>',
+          'content': '<input id=level-file type=file><button id=level-load-file type=button>Load Level from File</button><br>'
+            + '<button id=level-load-textarea type=button>Load Level from Textarea</button><br><textarea id=level-textarea>{}</textarea>',
           'default': true,
           'group': 'core-menu',
           'label': 'Load Levels',
