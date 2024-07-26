@@ -88,6 +88,3 @@ function repo_init(){
       'title': 'MultiverseViewer.htm',
     });
 }
-
-function repo_logic(){
-}
