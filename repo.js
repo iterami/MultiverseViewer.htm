@@ -30,7 +30,10 @@ function repo_init(){
         'level-load-textarea': {
           'onclick': function(){
               core_menu_lock = false;
-              const level_json = JSON.parse(document.getElementById('level-textarea').value);
+              const text = document.getElementById('level-textarea').value.trim();
+              const level_json = JSON.parse(text[0] === "'"
+                ? text.slice(1, -1)
+                : text);
               webgl_level_load({
                 'character': -1,
                 'json': level_json,
