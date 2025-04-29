@@ -72,6 +72,7 @@ function repo_init(){
           'todo': webgl_controls_wheel,
         },
       },
+      'storage-controls': true,
       'tabs': {
         'load': {
           'content': '<input id=level-file type=file><button id=level-load-file type=button>Load Level from File</button><br>'
