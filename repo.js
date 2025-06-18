@@ -55,7 +55,7 @@ function repo_init(){
           },
         },
       },
-      'menu-lock': true,
+      'menu_lock': true,
       'pointerbinds': {
         'contextmenu': {
           'preventDefault': true,
