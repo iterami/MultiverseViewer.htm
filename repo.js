@@ -3,9 +3,9 @@
 function repo_init(){
     core_repo_init({
       'events': {
-        'level-load-file': {
+        'level_load_file': {
           'onclick': function(){
-              const element = document.getElementById('level-file');
+              const element = document.getElementById('level_file');
               if(element.files.length === 0){
                   return;
               }
@@ -27,10 +27,10 @@ function repo_init(){
               });
           },
         },
-        'level-load-textarea': {
+        'level_load_textarea': {
           'onclick': function(){
               core_menu_lock = false;
-              const text = document.getElementById('level-textarea').value.trim() || '{}';
+              const text = document.getElementById('level_textarea').value.trim() || '{}';
               const level_json = JSON.parse(text[0] === "'"
                 ? text.slice(1, -1)
                 : text);
@@ -75,8 +75,8 @@ function repo_init(){
       'storage_controls': true,
       'tabs': {
         'load': {
-          'content': '<input id=level-file type=file><button id=level-load-file type=button>Load Level from File</button><br>'
-            + '<button id=level-load-textarea type=button>Load Level from Textarea</button><br><textarea id=level-textarea></textarea>',
+          'content': '<input id=level_file type=file><button id=level_load_file type=button>Load Level from File</button><br>'
+            + '<button id=level_load_textarea type=button>Load Level from Textarea</button><br><textarea id=level_textarea></textarea>',
           'default': true,
           'group': 'core_menu',
           'label': 'Load Levels',
