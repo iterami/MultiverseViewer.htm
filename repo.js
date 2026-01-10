@@ -50,7 +50,7 @@ function repo_init(){
       'info': '<button id=screenshot type=button>Screenshot</button>',
       'keybinds': {
         'Backquote': {
-          'todo': function(){
+          'down': function(){
               webgl_characters[webgl_character_id].automove = !webgl_characters[webgl_character_id].automove;
           },
         },
