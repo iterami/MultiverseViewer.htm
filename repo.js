@@ -54,9 +54,7 @@ function repo_init(){
       'info': '<button id=screenshot type=button>Screenshot</button>',
       'keybinds': {
         'Backquote': {
-          'down': function(){
-              webgl_character_automove();
-          },
+          'down': webgl_character_automove,
         },
       },
       'menu_lock': true,
