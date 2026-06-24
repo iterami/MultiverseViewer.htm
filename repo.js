@@ -47,11 +47,7 @@ function repo_init(){
                 : core_repo_title;
           },
         },
-        'screenshot': {
-          'onclick': webgl_screenshot,
-        },
       },
-      'info': '<button id=screenshot type=button>Screenshot</button>',
       'keybinds': {
         'Backquote': {
           'down': webgl_character_automove,
