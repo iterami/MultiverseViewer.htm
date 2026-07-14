@@ -65,7 +65,7 @@ function repo_init(){
       'storage_controls': true,
       'tabs': {
         'load': {
-          'content': '<input id=level_file type=file><button id=level_load_file type=button>Load Level from File</button><br>'
+          'content': '<input accept=".json,application/json" id=level_file type=file><button id=level_load_file type=button>Load Level from File</button><br>'
             + '<button id=level_load_textarea type=button>Load Level from Textarea</button><br><textarea id=level_textarea></textarea>',
           'default': true,
           'group': 'core_menu',
